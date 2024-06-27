@@ -80,7 +80,7 @@ module.exports = {
         myInfo
         .waitForElementVisible(by.linkText('Directory', 20000))
         .click(by.linkText('Directory'))
-        .setValue('[placeholder="Type for hints..."]', 'Peter')
+        .setValue('[placeholder="Type for hints..."]', 'Author')
        
     },
 
