@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="1"
+            tests="11">
+
+  <testsuite name="test.TC004_Orange_CRM"
+    errors="1" failures="1" hostname="" id="" package="TC004_Orange_CRM" skipped="0"
+    tests="11" time="340.8" timestamp="">
+  
+    <testcase name="Login" classname="test.TC004_Orange_CRM" time="43.43" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Admin Settings" classname="test.TC004_Orange_CRM" time="10.81" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Checking PIM" classname="test.TC004_Orange_CRM" time="1.042" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Checking Leave Info" classname="test.TC004_Orange_CRM" time="1.839" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Checking time Info" classname="test.TC004_Orange_CRM" time="1.492" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Check Recruitment Info" classname="test.TC004_Orange_CRM" time="1.374" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Check My Info" classname="test.TC004_Orange_CRM" time="2.340" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Check Performance Info" classname="test.TC004_Orange_CRM" time="2.183" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Dashboard Info" classname="test.TC004_Orange_CRM" time="2.010" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Check Directory Info" classname="test.TC004_Orange_CRM" time="3.500" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Logout" classname="test.TC004_Orange_CRM" time="100.4" assertions="2">
+
+      <failure message="Timed out while waiting for element &lt;Logout&gt; to be present for 50000 milliseconds. - expected &#34;visible&#34; but got: &#34;not found&#34; (50061ms)">    at Page.logout (/home/knoldus/Documents/Demo/TestReporting/pageObjects/dashboard.js:5:14)
+    at Object.Logout (/home/knoldus/Documents/Demo/TestReporting/test/TC004_Orange_CRM.js:90:14)</failure>
+<system-out>[[ATTACHMENT|/home/knoldus/Documents/Demo/TestReporting/screens/test/TC004_Orange_CRM/Logout_FAILED_Jun-27-2024-160245-GMT+0530.png]]</system-out>
+    
+    <error message="Timed out while waiting for element &lt;Logout&gt; to be present for 50000 milliseconds. - expected [32m&#34;visible&#34;[39m but got: [31m&#34;not found&#34;[39m [90m(50061ms)[39m" type="error"><![CDATA[
+    Error
+    at Command.executeCommand (/home/knoldus/Documents/Demo/TestReporting/node_modules/nightwatch/lib/page-object/command-wrapper.js:281:22)
+    at Page.waitForElementVisible (/home/knoldus/Documents/Demo/TestReporting/node_modules/nightwatch/lib/page-object/command-wrapper.js:86:27)
+    at Page.logout (/home/knoldus/Documents/Demo/TestReporting/pageObjects/dashboard.js:5:14)
+    at Object.Logout (/home/knoldus/Documents/Demo/TestReporting/test/TC004_Orange_CRM.js:90:14)
+    at Context.call (/home/knoldus/Documents/Demo/TestReporting/node_modules/nightwatch/lib/testsuite/context.js:515:35)
+    at TestCase.run (/home/knoldus/Documents/Demo/TestReporting/node_modules/nightwatch/lib/testsuite/testcase.js:58:31)
+    at Runnable.__runFn (/home/knoldus/Documents/Demo/TestReporting/node_modules/nightwatch/lib/testsuite/index.js:839:80)
+    at Runnable.run (/home/knoldus/Documents/Demo/TestReporting/node_modules/nightwatch/lib/testsuite/runnable.js:126:21)
+    at TestSuite.executeRunnable (/home/knoldus/Documents/Demo/TestReporting/node_modules/nightwatch/lib/testsuite/index.js:1000:49)
+    at TestSuite.handleRunnable (/home/knoldus/Documents/Demo/TestReporting/node_modules/nightwatch/lib/testsuite/index.js:1015:33)
+    ]]></error>
+    
+    </testcase>
+  
+
+  
+    <system-err>
+       NoSuchElementError
+   An error occurred while running .click() command on &lt;[class=&#34;oxd-icon bi-caret-down-fill oxd-userdropdown-icon&#34;]&gt;: Timed out while waiting for element &#34;[class=&#34;oxd-icon bi-caret-down-fill oxd-userdropdown-icon&#34;]&#34; with &#34;link text&#34; to be present for 50000 milliseconds.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    /home/knoldus/Documents/Demo/TestReporting/test/TC004_Orange_CRM.js:90
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     88 |         var dashboard = browser.page.dashboard()
+     89 |         dashboard
+     90 |             .logout() 
+     91 |             .assert.urlContains(&#39;/index.php/auth/login&#39;)
+     92 |     },
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+    </system-err>
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

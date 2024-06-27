@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="2"
+            failures="0"
+            tests="1">
+
+  <testsuite name="test.TC003_Orange_CRM"
+    errors="2" failures="0" hostname="" id="" package="TC003_Orange_CRM" skipped="2"
+    tests="1" time="5.004" timestamp="">
+  
+    <testcase name="Should have the correct title" classname="test.TC003_Orange_CRM" time="2.501" assertions="0">
+    <error message="Error while running &#34;navigateTo&#34; command: [WebDriverError] Unable to navigate to url http://localhost/: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=126.0.6478.114)" type="error"><![CDATA[
+    Error
+    at DescribeInstance.&lt;anonymous&gt; (/home/knoldus/Documents/Demo/TestReporting/test/TC003_Orange_CRM.js:5:10)
+    at Context.call (/home/knoldus/Documents/Demo/TestReporting/node_modules/nightwatch/lib/testsuite/context.js:515:35)
+    at TestCase.run (/home/knoldus/Documents/Demo/TestReporting/node_modules/nightwatch/lib/testsuite/testcase.js:58:31)
+    at Runnable.__runFn (/home/knoldus/Documents/Demo/TestReporting/node_modules/nightwatch/lib/testsuite/index.js:839:80)
+    at Runnable.run (/home/knoldus/Documents/Demo/TestReporting/node_modules/nightwatch/lib/testsuite/runnable.js:126:21)
+    at TestSuite.executeRunnable (/home/knoldus/Documents/Demo/TestReporting/node_modules/nightwatch/lib/testsuite/index.js:1000:49)
+    at TestSuite.handleRunnable (/home/knoldus/Documents/Demo/TestReporting/node_modules/nightwatch/lib/testsuite/index.js:1015:33)
+    at /home/knoldus/Documents/Demo/TestReporting/node_modules/nightwatch/lib/testsuite/index.js:839:21
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async DefaultRunner.runTestSuite (/home/knoldus/Documents/Demo/TestReporting/node_modules/nightwatch/lib/runner/test-runners/default.js:83:7)
+    ]]></error>
+    
+    </testcase>
+  
+
+  
+    <system-err>
+       WebDriverError:   Unable to navigate to url http://localhost/: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=126.0.6478.114)
+ WebDriverError
+   Error while running &#34;navigateTo&#34; command: [WebDriverError] Unable to navigate to url http://localhost/: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=126.0.6478.114)
+
+    Error location:
+    /home/knoldus/Documents/Demo/TestReporting/test/TC003_Orange_CRM.js:5
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     3 |     it(&#39;Should have the correct title&#39;, function(browser) {
+     4 |       browser
+     5 |         .navigateTo(&#39;/&#39;) 
+     6 |         .assert.textEquals(&#39;h1&#39;, &#39;Introducing Nightwatch v3&#39;)
+     7 |         .end()
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+    </system-err>
+  
+
+    
+
+  
+    
+    <testcase
+      name="Should lead to the installation page on click of Get Started" classname="test.TC003_Orange_CRM">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Should allow search and show correct results" classname="test.TC003_Orange_CRM">
+      <skipped />
+    </testcase>
+    
+  
+  </testsuite>
+</testsuites>

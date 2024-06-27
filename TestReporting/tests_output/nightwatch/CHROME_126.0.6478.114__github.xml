@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="1"
+            tests="2">
+
+  <testsuite name="nightwatch.github"
+    errors="0" failures="1" hostname="" id="" package="github" skipped="1"
+    tests="2" time="20.48" timestamp="">
+  
+    <testcase name="Github Title test" classname="nightwatch.github" time="2.374" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Github search for nightwatch repository" classname="nightwatch.github" time="7.864" assertions="4">
+
+    
+
+    
+
+      <failure message="Testing if element &lt;div[data-testid=&#34;results-list&#34;]:first-child&gt; contains text &#39;End-to-end testing framework written in Node.js and using the W3C Webdriver API&#39; in 5000ms - expected &#34;contains text &#39;End-to-end testing framework written in Node.js and using the W3C Webdriver API&#39;&#34; but got: &#34;does not contain &#39;End-to-end testing framework written in Node.js and using the W3C Webdriver API&#39;&#34; (5426ms)">    at Object.Github search for nightwatch repository (/home/knoldus/Documents/Demo/TestReporting/nightwatch/github.ts:23:15)</failure>
+<system-out>[[ATTACHMENT|/home/knoldus/Documents/Demo/TestReporting/screens/nightwatch/github/Github-search-for-nightwatch-repository_FAILED_Jun-26-2024-175615-GMT+0530.png]]</system-out>
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+    
+    <testcase
+      name="Github login with fake credentials" classname="nightwatch.github">
+      <skipped />
+    </testcase>
+    
+  
+  </testsuite>
+</testsuites>
